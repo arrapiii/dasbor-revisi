@@ -537,7 +537,7 @@ a {
 table {
   font-family: 'Quicksand', sans-serif;
   position: absolute;
-  top: 24%;
+  top: 34%;
   left: 36%;
   float: right;
   width: 50vw;
@@ -698,4 +698,120 @@ iconify-icon{
   color: white;
   scale: 180%;
   text-align: center;
+}
+
+/* dropdown */
+.menu-item a {
+  text-decoration: none;
+  position: relative;
+  color: #333;
+  padding: 10px 0px;
+  letter-spacing: 1px;
+  font-size: 2.4vh;
+
+}
+
+.sub-menu a {
+  text-decoration: none;
+  position: relative;
+  color: #333;
+  padding: 5px 0px;
+  letter-spacing: 1px;
+  font-size: 2vh;
+  font-weight: 500;
+}
+
+.menu-item {
+  list-style-type: none;
+  display: inline;
+  position: relative;
+  margin: 2vh;
+}
+
+.menu-item:before {
+  position: absolute;
+  content: "";
+  overflow: hidden;
+  width: 0%;
+  left: 50%;
+  top: 40px;
+  transition: 0.2s ease-in-out 0.15s;
+}
+
+.menu-item:hover:before {
+  width: 100%;
+  left: 0%;
+  transition: 0.2s ease-in-out;
+}
+
+.sub-menu {
+  position: absolute;
+  background: #fff;
+  top: 7vh;
+  padding: 0;
+  text-align: left;
+  box-shadow: 0px 4px 20px -5px rgba(0, 0, 0, 0.15);
+  width: 15vh;
+  margin-right: 20px;
+  opacity: 0;
+  transition: 0.45s ease all 0.1s;
+  z-index: 0;
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) all 0.1s;
+  visibility: hidden;
+}
+
+.menu-item:nth-child(n + 1):nth-child(-n + 6):hover .sub-menu {
+  max-width: 40vh;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  transition-delay: 0.15s;
+  z-index: 2;
+  visibility: visible;
+}
+
+.sub-menu .menu-item a {
+  display: block;
+}
+
+.menu-item:nth-child(n + 1):nth-child(-n + 6) .sub-menu-item {
+  list-style-type: none;
+  display: block;
+  padding: 0.5vh 2vh;
+  margin-right: 20px;
+  position: relative;
+  opacity: 0;
+  transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) all 0.1s;
+  visibility: hidden;
+}
+
+/* .menu-item:nth-child(n + 1):nth-child(-n + 6):hover .sub-menu {
+  max-width: 30vh;
+  opacity: 1;
+} */
+
+/* .menu-item:nth-child(n + 1):nth-child(-n + 6):hover .sub-menu-item a {
+  transition: 0.15s ease all;
+} */
+
+/* .menu-item:nth-child(n + 1):nth-child(-n + 6):hover .sub-menu-item a:hover {
+  color: #4BBBFA;
+} */
+
+.menu-item:nth-child(n + 1):nth-child(-n + 6):hover .sub-menu-item {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  opacity: 1;
+  transition-delay: 0.15s;
+  visibility: visible;
+}
+
+.contitle {
+  position: absolute;
+  left: 25%;
+  bottom: 78%;
+  color: black;
 }
