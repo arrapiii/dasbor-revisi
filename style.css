@@ -3,6 +3,7 @@
 html {
   box-sizing: border-box;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 *,
@@ -584,7 +585,7 @@ a {
   transform: translate(-50%, -50%);
 }
 
-table {
+.table {
   font-family: 'Quicksand', sans-serif;
   position: absolute;
   top: 34%;
@@ -600,7 +601,7 @@ table {
   background-color: white;
 }
 
-table th {
+.table th {
   background-color: #FFFFFF;
   width: 5vw;
   padding: 10px 10px;
@@ -608,19 +609,19 @@ table th {
   color: black;
 }
 
-table th:first-child {
+.table th:first-child {
   border-top-left-radius: 30px;
 }
 
-table th:nth-child(6) {
+.table th:nth-child(6) {
   border-top-right-radius: 30px;
 }
 
-table tr:nth-child(even){
+.table tr:nth-child(even){
   background-color: #dadada;
 }
 
-table td {
+.table td {
   /* background-color: #dadada;   */
   text-align: center;
   padding: 10px 10px;
@@ -643,7 +644,7 @@ table td {
   box-sizing: border-box;
 }
 
-table button {
+.table button {
   border: none;
 }
 
@@ -670,7 +671,7 @@ button:first-child {
   box-shadow: 0 0 5px;
 } */
 
-table button:nth-child(2) {
+.table button:nth-child(2) {
   /* background-color: black; */
   background: none;
   /* border: 1px solid; */
@@ -714,7 +715,7 @@ iconify-icon{
   text-align: center;
 }
 
-table iconify-icon{
+.table iconify-icon{
   /* height: 5vh; */
   color: black;
   scale: 180%;
@@ -736,9 +737,10 @@ i:hover {
 }
 
 .row {
-  position: absolute;
-  bottom: 53%;
-  left: 20%;
+  position: relative;
+  bottom: 73%;
+  padding-bottom: 100px;
+  left: 12.5%;
 }
 
 
@@ -764,15 +766,16 @@ i:hover {
 }
 
 .card .cardbody:nth-child(2) {
-  margin-left: 160px;
+  margin-left: 80px;
   background-color: white;
   width: 18vw;
 }
 
 .roww {
-  position: absolute;
-  bottom: 53%;
-  left: 19.5%;
+  position: relative;
+  bottom: 93%;
+  padding-bottom: 100px;
+  left: 12%;
   z-index: -1;
 }
 
@@ -798,7 +801,7 @@ i:hover {
 }
 
 .cardd .cardbodyy:nth-child(2) {
-  margin-left: 160px;
+  margin-left: 80px;
   background-color: #598EF3;
   width: 18vw;
 }
@@ -918,4 +921,31 @@ i:hover {
   left: 25%;
   bottom: 78%;
   color: black;
+}
+
+.barr {
+  scale: 80%;
+  margin-top: 20px;
+}
+
+.parent {
+  display: block;
+}
+
+.position {
+  position: absolute;
+  left: 9%;
+  bottom: 0.1px;
+  top: 90%;
+}
+
+canvas {
+  left: 7.5%;
+  margin-top: 17%;
+  position: absolute;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 10px;
+  scale: 115%;
 }

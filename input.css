@@ -534,7 +534,7 @@ a {
   box-shadow: none;
 }
 
-table {
+.tbl {
   font-family: 'Quicksand', sans-serif;
   position: absolute;
   top: 34%;
@@ -552,7 +552,7 @@ table {
   z-index: 2;
 }
 
-table th {
+.tbl th {
   background-color: #FFFFFF;
   width: 5vw;
   padding: 10px 10px;
@@ -560,22 +560,22 @@ table th {
   color: black;
 }
 
-table th:first-child {
+.tbl th:first-child {
   border-top-left-radius: 30px;
 }
 
-table th:nth-child(6) {
+.tbl th:nth-child(6) {
   border-top-right-radius: 30px;
 }
 
-table td {
+.tbl td {
   /* background-color: #dadada;   */
   text-align: center;
   padding: 10px 10px;
   /* border-bottom: 1px solid white; */
 }
 
-table tr td:nth-child(1) {
+.tbl tr td:nth-child(1) {
   text-align: left;
   padding-left: 5%;
   color: black;
@@ -628,7 +628,7 @@ button:first-child:hover {
   box-shadow: 0 0 5px;
 }
 
-table button:nth-child(2) {
+.tbl button:nth-child(2) {
   /* background-color: black; */
   border: 1px solid;
   border-radius: 5px;
